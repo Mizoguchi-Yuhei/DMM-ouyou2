@@ -10,11 +10,14 @@
   </head>
   <body>
     <%= render 'layouts/header' %>
+    <%= render "search/header" %>
+
       <main>
         <p id="notice"><%= notice %></p>
         <p id="error_explanation"><%= alert %></p>
         <%= yield %>
       </main>
+
     <%= render 'layouts/footer' %>
   </body>
 </html>
