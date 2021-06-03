@@ -14,7 +14,7 @@
           <% @datas.each do |user| %>
             <tr>
               <th>
-                <%= attachment_image_tag(user, :profile_image, :fill, 40, 40, fallback: "no_image.jpg", size:'40x40') %>
+                <%= attachment_image_tag(user, :profile_image, :fill, 50, 50, fallback: "no_image.jpg", size:'50x50') %>
               </th>
               <th>
                 <%= link_to "#{user.name}", user_path(user.id) %>
@@ -39,7 +39,7 @@
           <% @datas.each do |book| %>
             <tr>
               <th>
-                <%= attachment_image_tag(book.user, :profile_image, :fill, 40, 40, fallback: "no_image.jpg", size:'40x40') %>
+                <%= attachment_image_tag(book.user, :profile_image, :fill, 50, 50, fallback: "no_image.jpg", size:'50x50') %>
               </th>
               <th>
                 <%= link_to "#{book.title}", book_path(book.id) %>
